@@ -1,4 +1,4 @@
-import { Diamond, FileText, Database, Settings, MonitorCheck, ArrowRight } from "lucide-react";
+import { Diamond, FileText, Database, Settings, MonitorCheck, ArrowRight, MousePointerClick } from "lucide-react";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Button } from "./ui/button";
 
@@ -46,7 +46,7 @@ export const PricingSection = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Database className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <MousePointerClick className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Basic Backlinks</p>
                     <p className="text-sm text-white/60">up to 50 relevant backlinks with DR 10+</p>
