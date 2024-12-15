@@ -23,11 +23,11 @@ const Index = () => {
       <div id="features">
         <Features />
       </div>
-      <AboutUs />
       <div id="pricing">
         <PricingSection />
       </div>
       <FAQ />
+      <AboutUs />
       <Footer />
     </motion.div>
   );
