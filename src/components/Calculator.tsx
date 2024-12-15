@@ -9,10 +9,10 @@ export const Calculator = () => {
   const [conversion, setConversion] = useState<string>("");
 
   const calculateNewPlayers = () => {
-    if (!traffic || !conversion) return 0;
+    if (!traffic || !conversion) return "X";
     const monthlyTraffic = parseFloat(traffic);
     const conversionRate = parseFloat(conversion);
-    if (isNaN(monthlyTraffic) || isNaN(conversionRate)) return 0;
+    if (isNaN(monthlyTraffic) || isNaN(conversionRate)) return "X";
     
     return Math.round(monthlyTraffic * 0.1859 * (conversionRate / 100));
   };
