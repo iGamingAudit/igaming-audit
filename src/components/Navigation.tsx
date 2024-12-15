@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { Button } from "./ui/button"
 
 const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
@@ -38,11 +37,6 @@ const Navigation = () => {
             Pricing
           </button>
         </nav>
-        
-        <div className="ml-auto flex items-center space-x-4">
-          <Button variant="ghost">Sign In</Button>
-          <Button>Get Started</Button>
-        </div>
       </div>
     </div>
   )
