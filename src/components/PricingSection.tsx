@@ -19,10 +19,11 @@ export const PricingSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* One-Time Services Card */}
+          {/* One-Time Setup Card */}
           <Card className="glass border-white/20 overflow-hidden">
             <CardHeader className="space-y-2">
-              <h3 className="text-2xl md:text-3xl font-space-grotesk text-primary">One-Time Services</h3>
+              <h3 className="text-2xl md:text-3xl font-space-grotesk text-primary">One-Time Setup</h3>
+              <p className="text-sm text-white/60 italic">We build it, you run it</p>
               <div className="flex items-baseline gap-2">
                 <span className="text-4xl md:text-5xl font-orbitron font-bold text-white">5,000</span>
                 <span className="text-xl text-white/70">EUR</span>
