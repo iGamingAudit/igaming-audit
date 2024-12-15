@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-6">
         <div className="flex justify-between items-center">
           <p className="text-sm text-foreground/60">
-            © {new Date().getFullYear()} Your Company
+            © 2024 iGaming Audit
           </p>
           <Button variant="default">Get Started</Button>
         </div>
