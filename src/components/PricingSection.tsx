@@ -24,7 +24,7 @@ export const PricingSection = () => {
             <CardHeader className="space-y-2">
               <h3 className="text-2xl md:text-3xl font-space-grotesk text-primary">One-Time Setup</h3>
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl md:text-5xl font-orbitron font-bold text-white">5,000</span>
+                <span className="text-4xl md:text-5xl font-orbitron font-bold text-white">5,500</span>
                 <span className="text-xl text-white/70">EUR</span>
               </div>
               <p className="text-white/60">Initial setup and implementation</p>
@@ -60,9 +60,10 @@ export const PricingSection = () => {
             <CardHeader className="space-y-2">
               <div className="flex items-center gap-2">
                 <h3 className="text-2xl md:text-3xl font-space-grotesk text-secondary">Monthly Services</h3>
+                <span className="text-sm italic text-white/60">(optional)</span>
               </div>
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl md:text-5xl font-orbitron font-bold text-white">1,000</span>
+                <span className="text-4xl md:text-5xl font-orbitron font-bold text-white">1,500</span>
                 <span className="text-xl text-white/70">EUR / m</span>
               </div>
               <p className="text-white/60">Ongoing maintenance and optimization</p>
@@ -79,36 +80,36 @@ export const PricingSection = () => {
                 <div className="flex items-start gap-3">
                   <FileText className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-white">Additional 1 Article Page</p>
-                    <p className="text-sm text-white/60">up to 3,000 words</p>
+                    <p className="font-medium text-white">Content Updates</p>
+                    <p className="text-sm text-white/60">up to 1 new SEO article page (up to 3,000 words)</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MousePointerClick className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-white">Additional Backlinks</p>
-                    <p className="text-sm text-white/60">up to 10 additional relevant backlinks with DR 10+</p>
+                    <p className="font-medium text-white">Advanced Backlinks</p>
+                    <p className="text-sm text-white/60">up to 10 new, high-quality (DR 20+) backlinks</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Database className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Hosting</p>
-                    <p className="text-sm text-white/60">up to 50,000 visitors</p>
+                    <p className="text-sm text-white/60">Seamless, reliable performance for up to 50,000 visitors</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MonitorCheck className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-white">Bonus Monitoring and Small Textual Updates</p>
-                    <p className="text-sm text-white/60">up to 1 time and up to 10 small changes per month</p>
+                    <p className="font-medium text-white">Monitoring & Updates</p>
+                    <p className="text-sm text-white/60">up to 1 time Bonus adjustments and up to 10 small text changes</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <FileChartLine className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Reporting</p>
-                    <p className="text-sm text-white/60">up to 1 page report per month</p>
+                    <p className="text-sm text-white/60">up to 1 page performance report</p>
                   </div>
                 </div>
               </div>
