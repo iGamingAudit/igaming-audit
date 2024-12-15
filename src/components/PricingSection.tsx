@@ -1,4 +1,4 @@
-import { Diamond, FileText, Database, Settings, File, MonitorCheck, ArrowRight } from "lucide-react";
+import { Diamond, FileText, Database, Settings, MonitorCheck, ArrowRight } from "lucide-react";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Button } from "./ui/button";
 
@@ -72,7 +72,14 @@ export const PricingSection = () => {
             <CardContent className="space-y-4">
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <File className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
+                  <Diamond className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-white">Design Adjustments</p>
+                    <p className="text-sm text-white/60">up to 1 desktop screen homepage</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <FileText className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Additional 1 Article Page</p>
                     <p className="text-sm text-white/60">up to 3,000 words</p>
@@ -104,13 +111,6 @@ export const PricingSection = () => {
                   <div>
                     <p className="font-medium text-white">Reporting</p>
                     <p className="text-sm text-white/60">up to 1 page report per month</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Settings className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
-                  <div>
-                    <p className="font-medium text-white">Design Adjustments</p>
-                    <p className="text-sm text-white/60">up to 1 desktop screen homepage</p>
                   </div>
                 </div>
               </div>
