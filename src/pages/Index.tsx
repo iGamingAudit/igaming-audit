@@ -6,6 +6,7 @@ import { PricingSection } from "@/components/PricingSection";
 import { AboutUs } from "@/components/AboutUs";
 import { FAQ } from "@/components/FAQ";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
         <PricingSection />
       </div>
       <FAQ />
+      <Footer />
     </motion.div>
   );
 };
