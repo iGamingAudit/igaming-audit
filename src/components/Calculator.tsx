@@ -3,6 +3,7 @@ import { Users, Percent } from "lucide-react";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { useState } from "react";
+import { Button } from "./ui/button";
 
 export const Calculator = () => {
   const [traffic, setTraffic] = useState<string>("");
@@ -81,6 +82,12 @@ export const Calculator = () => {
                 * this is just an estimate and assumes third position in Google with similar conversion rate
               </p>
             </div>
+          </div>
+          
+          <div className="mt-8 text-center">
+            <Button size="lg" className="w-full md:w-auto">
+              Get Started
+            </Button>
           </div>
         </motion.div>
       </div>
