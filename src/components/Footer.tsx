@@ -1,97 +1,42 @@
-import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+import { Github } from "lucide-react";
 
 const Footer = () => {
-  const [showFooter, setShowFooter] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolledToBottom =
-        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100;
-      setShowFooter(scrolledToBottom);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  if (!showFooter) return null;
+  const menuItems = [
+    { href: "#calculator", text: "ROI Calculator" },
+    { href: "#features", text: "Why Choose Us" },
+    { href: "#pricing", text: "Pricing" },
+    { href: "#faq", text: "FAQ" },
+    { href: "#about", text: "About Us" },
+  ];
 
   return (
-    <footer className="sticky bottom-0 z-50 w-full border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center justify-between">
-        <NavigationMenu className="hidden md:flex">
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("calculator")}
+    <footer className="bg-background border-t">
+      <div className="container mx-auto px-4 py-12">
+        <div className="flex flex-col items-center space-y-8">
+          <nav className="flex flex-wrap justify-center gap-8">
+            {menuItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-foreground/60 hover:text-foreground transition-colors"
               >
-                ROI Calculator
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("features")}
-              >
-                Why Choose Us
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("pricing")}
-              >
-                Pricing
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("faq")}
-              >
-                FAQ
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("about")}
-              >
-                About Us
-              </Button>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-        <div className="flex items-center gap-4">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} All rights reserved.
+                {item.text}
+              </a>
+            ))}
+          </nav>
+          <div className="flex items-center space-x-4">
+            <a
+              href="https://github.com/yourusername/yourproject"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/60 hover:text-foreground transition-colors"
+            >
+              <Github className="h-6 w-6" />
+            </a>
+          </div>
+          <p className="text-sm text-foreground/60">
+            © {new Date().getFullYear()} Your Company. All rights reserved.
           </p>
-          <Button
-            onClick={() => scrollToSection("calculator")}
-            variant="default"
-            size="sm"
-          >
-            Get Started
-          </Button>
         </div>
       </div>
     </footer>

@@ -1,131 +1,77 @@
-import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
 import { useState } from "react";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+import { Menu, X } from "lucide-react";
+import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 
 const Navigation = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsMobileMenuOpen(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
+  const menuItems = [
+    { href: "#calculator", text: "ROI Calculator" },
+    { href: "#features", text: "Why Choose Us" },
+    { href: "#pricing", text: "Pricing" },
+    { href: "#faq", text: "FAQ" },
+    { href: "#about", text: "About Us" },
+  ];
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container relative flex h-14 items-center justify-between">
-        <span className="text-xl font-bold">iGaming Audit</span>
-        
-        <NavigationMenu className="hidden md:flex mx-auto">
-          <NavigationMenuList className="flex-row space-x-2">
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("calculator")}
-              >
-                ROI Calculator
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("features")}
-              >
-                Why Choose Us
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("pricing")}
-              >
-                Pricing
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("faq")}
-              >
-                FAQ
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("about")}
-              >
-                About Us
-              </Button>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-
-        <Button
-          variant="ghost"
-          size="icon"
-          className="md:hidden"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          <Menu className="h-6 w-6" />
-        </Button>
-
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="absolute top-14 left-0 w-full bg-background border-b md:hidden">
-            <div className="flex flex-col p-4 space-y-2">
-              <Button
-                variant="ghost"
-                className="w-full justify-start"
-                onClick={() => scrollToSection("calculator")}
-              >
-                ROI Calculator
-              </Button>
-              <Button
-                variant="ghost"
-                className="w-full justify-start"
-                onClick={() => scrollToSection("features")}
-              >
-                Why Choose Us
-              </Button>
-              <Button
-                variant="ghost"
-                className="w-full justify-start"
-                onClick={() => scrollToSection("pricing")}
-              >
-                Pricing
-              </Button>
-              <Button
-                variant="ghost"
-                className="w-full justify-start"
-                onClick={() => scrollToSection("faq")}
-              >
-                FAQ
-              </Button>
-              <Button
-                variant="ghost"
-                className="w-full justify-start"
-                onClick={() => scrollToSection("about")}
-              >
-                About Us
-              </Button>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex-1 flex justify-center">
+            <div className="hidden md:flex items-center space-x-8">
+              {menuItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-foreground/60 hover:text-foreground transition-colors"
+                >
+                  {item.text}
+                </a>
+              ))}
             </div>
           </div>
-        )}
+
+          <div className="md:hidden">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="relative"
+              onClick={toggleMenu}
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
+        </div>
       </div>
-    </header>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          className="md:hidden absolute top-16 inset-x-0 bg-background border-b"
+        >
+          <div className="px-4 py-2 space-y-1">
+            {menuItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="block px-3 py-2 text-foreground/60 hover:text-foreground transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.text}
+              </a>
+            ))}
+          </div>
+        </motion.div>
+      )}
+    </nav>
   );
 };
 
