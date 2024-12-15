@@ -40,7 +40,7 @@ const Footer = () => {
                 className="text-sm font-medium"
                 onClick={() => scrollToSection("calculator")}
               >
-                Calculator
+                ROI Calculator
               </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -49,16 +49,7 @@ const Footer = () => {
                 className="text-sm font-medium"
                 onClick={() => scrollToSection("features")}
               >
-                Features
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium"
-                onClick={() => scrollToSection("about")}
-              >
-                About
+                Why Choose Us
               </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -77,6 +68,15 @@ const Footer = () => {
                 onClick={() => scrollToSection("faq")}
               >
                 FAQ
+              </Button>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Button
+                variant="ghost"
+                className="text-sm font-medium"
+                onClick={() => scrollToSection("about")}
+              >
+                About Us
               </Button>
             </NavigationMenuItem>
           </NavigationMenuList>
