@@ -3,6 +3,13 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 
 export const Hero = () => {
+  const scrollToNextSection = () => {
+    const element = document.getElementById('calculator');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-secondary/20 via-background to-background" />
@@ -31,8 +38,8 @@ export const Hero = () => {
               Get Started
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button size="lg" variant="outline">
-              Watch Demo
+            <Button size="lg" variant="outline" onClick={scrollToNextSection}>
+              Learn More
             </Button>
           </div>
         </motion.div>
