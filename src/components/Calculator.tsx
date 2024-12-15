@@ -28,7 +28,7 @@ export const Calculator = () => {
             Calculate Your Potential Returns
           </h2>
           <p className="mt-4 text-muted-foreground">
-            See how much you could save by switching to satellite sites
+            See how many new players you could get by having a satellite site
           </p>
         </div>
 
