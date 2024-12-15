@@ -8,7 +8,7 @@ const Footer = () => {
           <p className="text-sm text-foreground/60">
             © {new Date().getFullYear()} Your Company
           </p>
-          <Button variant="outline">Get Started</Button>
+          <Button variant="default">Get Started</Button>
         </div>
       </div>
     </footer>
