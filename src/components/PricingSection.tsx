@@ -42,7 +42,7 @@ export const PricingSection = () => {
                   <FileText className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">5 Article Pages</p>
-                    <p className="text-sm text-white/60">up to 15,000 words</p>
+                    <p className="text-sm text-white/60">Targeted, high-quality content (up to 15,000 words) for organic traffic</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
