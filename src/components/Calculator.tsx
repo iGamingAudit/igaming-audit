@@ -69,7 +69,7 @@ export const Calculator = () => {
               </div>
 
               <div className="space-y-4">
-                <Label htmlFor="cost">Current Cost per FTD</Label>
+                <Label htmlFor="cost">Current Cost per FTD <i>(in EUR)</i></Label>
                 <div className="relative">
                   <CalculatorIcon className="absolute left-3 top-2.5 h-5 w-5 text-muted-foreground" />
                   <Input
