@@ -14,9 +14,15 @@ const Index = () => {
     >
       <Navigation />
       <Hero />
-      <Calculator />
-      <Features />
-      <PricingSection />
+      <div id="calculator">
+        <Calculator />
+      </div>
+      <div id="features">
+        <Features />
+      </div>
+      <div id="pricing">
+        <PricingSection />
+      </div>
     </motion.div>
   );
 };
