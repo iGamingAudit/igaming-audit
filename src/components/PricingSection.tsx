@@ -1,4 +1,4 @@
-import { Diamond, FileText, Database, Settings, MonitorCheck, ArrowRight, MousePointerClick } from "lucide-react";
+import { Diamond, FileText, Database, Settings, MonitorCheck, ArrowRight, MousePointerClick, FileChartLine } from "lucide-react";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Button } from "./ui/button";
 
@@ -106,14 +106,7 @@ export const PricingSection = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <FileText className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
-                  <div>
-                    <p className="font-medium text-white">Other Textual Information Update</p>
-                    <p className="text-sm text-white/60">up to 1 time per month</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <FileText className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
+                  <FileChartLine className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Reporting</p>
                     <p className="text-sm text-white/60">up to 1 page report per month</p>
