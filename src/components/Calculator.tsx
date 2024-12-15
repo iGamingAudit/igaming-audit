@@ -48,7 +48,7 @@ export const Calculator = () => {
                   <Input
                     id="traffic"
                     placeholder="e.g. 10000"
-                    className="pl-10"
+                    className="pl-10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                     type="number"
                     value={traffic}
                     onChange={(e) => setTraffic(e.target.value)}
@@ -63,7 +63,7 @@ export const Calculator = () => {
                   <Input
                     id="conversion"
                     placeholder="e.g. 2.5"
-                    className="pl-10"
+                    className="pl-10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                     type="number"
                     step="0.1"
                     value={conversion}
