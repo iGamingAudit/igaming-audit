@@ -8,7 +8,7 @@ export const PricingSection = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-secondary/10 text-secondary">
-            Transparent Pricing
+            Our Pricing
           </span>
           <h2 className="mt-4 text-3xl md:text-4xl font-bold">
             Simple, Transparent Pricing Plans
