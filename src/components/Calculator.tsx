@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Calculator as CalculatorIcon, Percent, Users, Globe } from "lucide-react";
+import { Users, Percent } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
@@ -52,31 +52,6 @@ export const Calculator = () => {
                     className="pl-10"
                     type="number"
                     step="0.1"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <Label htmlFor="geo">Target GEO</Label>
-                <div className="relative">
-                  <Globe className="absolute left-3 top-2.5 h-5 w-5 text-muted-foreground" />
-                  <Input
-                    id="geo"
-                    placeholder="e.g. United Kingdom"
-                    className="pl-10"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <Label htmlFor="cost">Current Cost per FTD <i>(in EUR)</i></Label>
-                <div className="relative">
-                  <CalculatorIcon className="absolute left-3 top-2.5 h-5 w-5 text-muted-foreground" />
-                  <Input
-                    id="cost"
-                    placeholder="e.g. 200"
-                    className="pl-10"
-                    type="number"
                   />
                 </div>
               </div>
