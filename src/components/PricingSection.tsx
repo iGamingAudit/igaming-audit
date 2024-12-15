@@ -35,7 +35,7 @@ export const PricingSection = () => {
                   <Diamond className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Design Clone</p>
-                    <p className="text-sm text-white/60">up to 5 desktop screen homepage</p>
+                    <p className="text-sm text-white/60">Site with up to 5 desktop screen sections to closely match your original design</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -56,7 +56,6 @@ export const PricingSection = () => {
             </CardContent>
           </Card>
 
-          {/* Monthly Services Card */}
           <Card className="glass border-white/20 overflow-hidden">
             <CardHeader className="space-y-2">
               <div className="flex items-center gap-2">
