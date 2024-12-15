@@ -73,7 +73,7 @@ export const PricingSection = () => {
                   <Diamond className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Design Adjustments</p>
-                    <p className="text-sm text-white/60">up to 1 desktop screen homepage</p>
+                    <p className="text-sm text-white/60">up to 1 desktop screen section adjustment to match updated designs</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
