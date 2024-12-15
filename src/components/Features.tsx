@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Globe, Shield, Zap, BarChart } from "lucide-react";
+import { Globe, Shield, Zap, BarChart, ArrowRight } from "lucide-react";
+import { Button } from "./ui/button";
 
 const features = [
   {
@@ -59,6 +60,19 @@ export const Features = () => {
           ))}
         </div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="mt-12 text-center"
+      >
+        <Button size="lg" variant="accent" className="group">
+          Get Started
+          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </Button>
+      </motion.div>
     </section>
   );
 };

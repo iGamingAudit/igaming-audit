@@ -1,5 +1,6 @@
-import { Diamond, FileText, Database, Settings, File, MonitorCheck } from "lucide-react";
+import { Diamond, FileText, Database, Settings, File, MonitorCheck, ArrowRight } from "lucide-react";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Button } from "./ui/button";
 
 export const PricingSection = () => {
   return (
@@ -100,6 +101,13 @@ export const PricingSection = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        <div className="mt-12 text-center">
+          <Button size="lg" variant="primary" className="group">
+            Get Started
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Button>
         </div>
       </div>
     </section>

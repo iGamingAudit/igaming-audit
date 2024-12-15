@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Calculator as CalculatorIcon, Percent, Users, Globe } from "lucide-react";
+import { Calculator as CalculatorIcon, Percent, Users, Globe, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
@@ -86,6 +86,12 @@ export const Calculator = () => {
               <Button size="lg">
                 Calculate Savings
               </Button>
+              <div>
+                <Button size="lg" variant="secondary" className="group">
+                  Get Started
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </div>
             </div>
           </div>
         </motion.div>
