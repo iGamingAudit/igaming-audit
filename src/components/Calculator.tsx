@@ -75,7 +75,7 @@ export const Calculator = () => {
 
             <div className="mt-8 text-center space-y-2">
               <h3 className="text-2xl font-bold">
-                Get {calculateNewPlayers()} new players with our Satellite Site*
+                Get <span className="text-primary">{calculateNewPlayers()}</span> new players with our Satellite Site*
               </h3>
               <p className="text-xs italic text-muted-foreground">
                 * this is just an estimate and assumes third position in Google with similar conversion rate
