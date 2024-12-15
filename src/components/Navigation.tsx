@@ -13,7 +13,7 @@ const Navigation = () => {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <Link to="/" className="mr-6 flex items-center space-x-2">
           <span className="font-bold">
-            Cosmic Audit
+            iGaming Audit
           </span>
         </Link>
         
