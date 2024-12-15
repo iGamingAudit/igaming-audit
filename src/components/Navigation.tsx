@@ -23,20 +23,10 @@ const Navigation = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center justify-between md:justify-start">
-        <div className="flex items-center space-x-4">
-          <span className="text-xl font-bold">iGaming Audit</span>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            <Menu className="h-6 w-6" />
-          </Button>
-        </div>
+      <div className="container relative flex h-14 items-center">
+        <span className="text-xl font-bold absolute left-4">iGaming Audit</span>
         
-        <NavigationMenu className="hidden md:flex">
+        <NavigationMenu className="hidden md:flex mx-auto">
           <NavigationMenuList className="flex-row space-x-2">
             <NavigationMenuItem>
               <Button
@@ -85,6 +75,15 @@ const Navigation = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden absolute right-4"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <Menu className="h-6 w-6" />
+        </Button>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
