@@ -1,10 +1,22 @@
 import { motion } from "framer-motion";
 import { Users, Percent } from "lucide-react";
-import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
+import { useState } from "react";
 
 export const Calculator = () => {
+  const [traffic, setTraffic] = useState<string>("");
+  const [conversion, setConversion] = useState<string>("");
+
+  const calculateNewPlayers = () => {
+    if (!traffic || !conversion) return 0;
+    const monthlyTraffic = parseFloat(traffic);
+    const conversionRate = parseFloat(conversion);
+    if (isNaN(monthlyTraffic) || isNaN(conversionRate)) return 0;
+    
+    return Math.round(monthlyTraffic * 0.1859 * (conversionRate / 100));
+  };
+
   return (
     <section className="py-12 md:py-24 bg-gradient-to-b from-background to-muted/10">
       <div className="container px-4 mx-auto">
@@ -38,6 +50,8 @@ export const Calculator = () => {
                     placeholder="e.g. 10000"
                     className="pl-10"
                     type="number"
+                    value={traffic}
+                    onChange={(e) => setTraffic(e.target.value)}
                   />
                 </div>
               </div>
@@ -52,15 +66,20 @@ export const Calculator = () => {
                     className="pl-10"
                     type="number"
                     step="0.1"
+                    value={conversion}
+                    onChange={(e) => setConversion(e.target.value)}
                   />
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 text-center">
-              <Button size="lg">
-                Calculate Savings
-              </Button>
+            <div className="mt-8 text-center space-y-2">
+              <h3 className="text-2xl font-bold">
+                Get {calculateNewPlayers()} new players with our Satellite Site*
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                * this assumes third position in Google with similar conversion rate
+              </p>
             </div>
           </div>
         </motion.div>
