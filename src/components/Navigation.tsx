@@ -18,13 +18,13 @@ const Navigation = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
+      <div className="container flex h-auto md:h-14 items-center">
         <NavigationMenu>
-          <NavigationMenuList>
+          <NavigationMenuList className="flex-col md:flex-row space-y-2 md:space-y-0 py-2 md:py-0">
             <NavigationMenuItem>
               <Button
                 variant="ghost"
-                className="text-sm font-medium"
+                className="text-sm font-medium w-full md:w-auto justify-start"
                 onClick={() => scrollToSection("calculator")}
               >
                 Calculator
@@ -33,7 +33,7 @@ const Navigation = () => {
             <NavigationMenuItem>
               <Button
                 variant="ghost"
-                className="text-sm font-medium"
+                className="text-sm font-medium w-full md:w-auto justify-start"
                 onClick={() => scrollToSection("features")}
               >
                 Features
@@ -42,7 +42,7 @@ const Navigation = () => {
             <NavigationMenuItem>
               <Button
                 variant="ghost"
-                className="text-sm font-medium"
+                className="text-sm font-medium w-full md:w-auto justify-start"
                 onClick={() => scrollToSection("about")}
               >
                 About
@@ -51,7 +51,7 @@ const Navigation = () => {
             <NavigationMenuItem>
               <Button
                 variant="ghost"
-                className="text-sm font-medium"
+                className="text-sm font-medium w-full md:w-auto justify-start"
                 onClick={() => scrollToSection("pricing")}
               >
                 Pricing
@@ -60,7 +60,7 @@ const Navigation = () => {
             <NavigationMenuItem>
               <Button
                 variant="ghost"
-                className="text-sm font-medium"
+                className="text-sm font-medium w-full md:w-auto justify-start"
                 onClick={() => scrollToSection("faq")}
               >
                 FAQ
