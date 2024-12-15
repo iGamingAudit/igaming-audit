@@ -59,7 +59,6 @@ export const PricingSection = () => {
           {/* Monthly Services Card */}
           <Card className="glass border-white/20 overflow-hidden">
             <CardHeader className="space-y-2">
-              <p className="text-sm text-white/60 italic">(optional)</p>
               <div className="flex items-center gap-2">
                 <h3 className="text-2xl md:text-3xl font-space-grotesk text-secondary">Monthly Services</h3>
                 <span className="text-sm text-white/60 italic">(optional)</span>
