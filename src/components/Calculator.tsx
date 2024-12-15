@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Calculator as CalculatorIcon, Percent, Users, Globe, ArrowRight } from "lucide-react";
+import { Calculator as CalculatorIcon, Percent, Users, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
