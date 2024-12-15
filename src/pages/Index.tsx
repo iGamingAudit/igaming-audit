@@ -3,6 +3,8 @@ import { Hero } from "@/components/Hero";
 import { Calculator } from "@/components/Calculator";
 import { Features } from "@/components/Features";
 import { PricingSection } from "@/components/PricingSection";
+import { AboutUs } from "@/components/AboutUs";
+import { FAQ } from "@/components/FAQ";
 import Navigation from "@/components/Navigation";
 
 const Index = () => {
@@ -20,9 +22,11 @@ const Index = () => {
       <div id="features">
         <Features />
       </div>
+      <AboutUs />
       <div id="pricing">
         <PricingSection />
       </div>
+      <FAQ />
     </motion.div>
   );
 };
