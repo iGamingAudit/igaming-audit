@@ -102,7 +102,7 @@ export const PricingSection = () => {
                   <MonitorCheck className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Bonus Monitoring and Small Textual Updates</p>
-                    <p className="text-sm text-white/60">up to 1 time per month</p>
+                    <p className="text-sm text-white/60">up to 1 time and up to 10 small changes per month</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
