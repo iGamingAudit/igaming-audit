@@ -6,7 +6,7 @@ import { Label } from "./ui/label";
 
 export const Calculator = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-muted/10">
+    <section className="py-12 md:py-24 bg-gradient-to-b from-background to-muted/10">
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-primary/10 text-primary">

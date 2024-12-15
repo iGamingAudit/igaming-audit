@@ -27,7 +27,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <section className="py-24">
+    <section className="py-12 md:py-24">
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent">

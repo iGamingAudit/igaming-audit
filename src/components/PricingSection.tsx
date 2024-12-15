@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export const PricingSection = () => {
   return (
-    <section className="w-full py-24 px-4">
+    <section className="w-full py-12 md:py-24 px-4">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-8">
           {/* One-Time Services Card */}
