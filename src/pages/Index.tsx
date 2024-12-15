@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Hero } from "@/components/Hero";
 import { Calculator } from "@/components/Calculator";
 import { Features } from "@/components/Features";
+import { PricingSection } from "@/components/PricingSection";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <Hero />
       <Calculator />
       <Features />
+      <PricingSection />
     </motion.div>
   );
 };
