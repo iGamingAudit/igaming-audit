@@ -61,7 +61,6 @@ export const PricingSection = () => {
             <CardHeader className="space-y-2">
               <div className="flex items-center gap-2">
                 <h3 className="text-2xl md:text-3xl font-space-grotesk text-secondary">Monthly Services</h3>
-                <span className="text-sm text-white/60 italic">(optional)</span>
               </div>
               <div className="flex items-baseline gap-2">
                 <span className="text-4xl md:text-5xl font-orbitron font-bold text-white">1,000</span>
@@ -83,6 +82,13 @@ export const PricingSection = () => {
                   <div>
                     <p className="font-medium text-white">Additional 1 Article Page</p>
                     <p className="text-sm text-white/60">up to 3,000 words</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MousePointerClick className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-white">Additional Backlinks</p>
+                    <p className="text-sm text-white/60">up to 10 additional relevant backlinks with DR 10+</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
