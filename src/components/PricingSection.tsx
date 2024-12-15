@@ -49,7 +49,7 @@ export const PricingSection = () => {
                   <MousePointerClick className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Basic Backlinks</p>
-                    <p className="text-sm text-white/60">up to 50 relevant backlinks with DR 10+</p>
+                    <p className="text-sm text-white/60">up to 50 relevant backlinks with DR 10+ to boost your domain authority</p>
                   </div>
                 </div>
               </div>
