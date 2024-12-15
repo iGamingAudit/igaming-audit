@@ -85,9 +85,25 @@ export const Calculator = () => {
           </div>
           
           <div className="mt-8 text-center">
-            <Button size="lg" className="w-full md:w-auto">
+            <Button size="lg" className="group w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90">
               Get Started
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
             </Button>
+            <p className="mt-2 text-sm text-muted-foreground">No obligations contract</p>
           </div>
         </motion.div>
       </div>
