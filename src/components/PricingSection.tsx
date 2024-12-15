@@ -6,6 +6,18 @@ export const PricingSection = () => {
   return (
     <section className="w-full py-12 md:py-24 px-4">
       <div className="container mx-auto">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-accent/10 text-accent">
+            Transparent Pricing
+          </span>
+          <h2 className="mt-4 text-3xl md:text-4xl font-bold">
+            Simple, Transparent Pricing Plans
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Choose the plan that best fits your needs
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-8">
           {/* One-Time Services Card */}
           <Card className="glass border-white/20 overflow-hidden">
