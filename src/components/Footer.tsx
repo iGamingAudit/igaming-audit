@@ -8,7 +8,7 @@ const Footer = () => {
           <p className="text-sm text-foreground/60">
             © 2024 iGaming Audit
           </p>
-          <Button variant="default">Get Started</Button>
+          <Button variant="default" onClick={() => window.location.href = 'https://t.me/igamingaudit'}>Get Started</Button>
         </div>
       </div>
     </footer>
