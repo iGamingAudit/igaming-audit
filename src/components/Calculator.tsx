@@ -85,7 +85,7 @@ export const Calculator = () => {
           </div>
           
           <div className="mt-8 text-center">
-            <Button size="lg" className="group w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button size="lg" className="group w-full md:w-auto bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => window.location.href = 'https://t.me/igamingaudit'}>
               Get Started
               <svg
                 xmlns="http://www.w3.org/2000/svg"
