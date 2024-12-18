@@ -42,14 +42,14 @@ export const PricingSection = () => {
                   <FileText className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">5 Article Pages</p>
-                    <p className="text-sm text-white/60">Targeted, high-quality content (up to 15,000 words) for organic traffic</p>
+                    <p className="text-sm text-white/60">Targeted, high-quality 5 articles for organic traffic</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MousePointerClick className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Basic Backlinks</p>
-                    <p className="text-sm text-white/60">up to 50 relevant backlinks with DR 10+ to boost your domain authority</p>
+                    <p className="text-sm text-white/60">up to 50 relevant backlinks to boost your domain authority</p>
                   </div>
                 </div>
               </div>
@@ -81,14 +81,14 @@ export const PricingSection = () => {
                   <FileText className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-white">Content Updates</p>
-                    <p className="text-sm text-white/60">up to 1 new SEO article page (up to 3,000 words)</p>
+                    <p className="text-sm text-white/60">up to 3 new SEO article page</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MousePointerClick className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-medium text-white">Advanced Backlinks</p>
-                    <p className="text-sm text-white/60">up to 10 new, high-quality (DR 20+) backlinks</p>
+                    <p className="font-medium text-white">Additional Backlinks</p>
+                    <p className="text-sm text-white/60">up to 5 new, relevant backlinks</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
