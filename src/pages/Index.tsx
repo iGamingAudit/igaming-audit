@@ -7,8 +7,32 @@ import { FAQ } from "@/components/FAQ";
 import { AboutUs } from "@/components/AboutUs";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Function to handle scrolling to section
+    const scrollToSection = () => {
+      const hash = location.hash;
+      if (hash) {
+        // Remove the # from the hash
+        const element = document.getElementById(hash.slice(1));
+        if (element) {
+          // Add a small delay to ensure the page is fully loaded
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
+      }
+    };
+
+    // Call on mount and when hash changes
+    scrollToSection();
+  }, [location.hash]);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
